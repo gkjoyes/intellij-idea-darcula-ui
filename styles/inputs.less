@@ -1,0 +1,74 @@
+// Checkbox.
+.input-checkbox {
+    &:active {
+        background-color: @accent-color;
+    }
+
+    &:after,
+    &:before {
+        background-color: @accent-text-color;
+    }
+
+    &:checked {
+        background-color: @accent-color;
+    }
+
+    &:indeterminate {
+        background-color: @accent-color;
+    }
+}
+
+// Radio.
+.input-radio {
+    &:before {
+        background-color: @accent-text-color;
+    }
+
+    &:active {
+        background-color: @accent-color;
+    }
+
+    &:checked {
+        background-color: @accent-color;
+    }
+}
+
+// Range (Slider).
+.input-range {
+    &::-webkit-slider-thumb {
+        background-color: @accent-color;
+    }
+}
+
+// Toggle.
+.input-toggle {
+    &:checked {
+        background-color: @accent-color;
+    }
+
+    &:before {
+        background-color: @accent-text-color;
+    }
+}
+
+// States.
+.input-checkbox,
+.input-color,
+.input-number,
+.input-search,
+.input-select,
+.input-text,
+.input-textarea {
+    &:focus {
+        .focus();
+    }
+}
+
+.input-number,
+.input-search,
+.input-text,
+.input-textarea {
+    &:invalid {
+        .invalid();
+    }
+}
